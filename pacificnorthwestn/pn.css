@@ -1,0 +1,77 @@
+
+
+/*--.title{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'times';
+  text-transform: uppercase;
+  margin: 1px;
+  padding: 1px;
+}*/
+
+/* The navbar container */
+.topnav {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'times';
+  text-transform: uppercase;
+  overflow: hidden;/* NOTE: why I have to write hidden, what does overflow mean */
+  background-color: #333;
+  width: 990px;/* NOTE: what if I don't know the px value, can I still write percentage here? */
+
+}
+
+/* Navbar links */
+.topnav a{
+  float: left;
+  display: block;
+  text-align: center;
+  width: 33%;
+  text-decoration: none;
+  color: white;
+}
+
+.topnav a.I{
+  float: left;
+  display: block;
+  text-align: center;
+  width: 33%;
+  text-decoration: none;
+  background-image: url("I.jpg");
+  padding: 50px 0;
+  margin:100px 0;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0px;
+}
+
+.column.side {
+  width: 0%;
+}
+
+.column.middle {
+  width: 0%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding:0px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
