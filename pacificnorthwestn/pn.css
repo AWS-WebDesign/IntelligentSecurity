@@ -9,15 +9,47 @@
   padding: 1px;
 }*/
 
+.title
+{color: black;
+padding: 30px;
+text-align: center;
+}
+
+.text
+{color: black;
+text-align: center;
+}
+
+.format1
+{
+  width: 50px;
+}
+
+.format2
+{
+  width: 70px;
+}
+
+.format3
+{
+  width: 60px;
+}
+
+table{
+  width: 200px;
+  height:150px;
+  overflow-y: scroll;
+}
+
 /* The navbar container */
 .topnav {
   text-align: center;
   font-size: 35px;
   font-family: 'times';
   text-transform: uppercase;
-  overflow: hidden;/* NOTE: why I have to write hidden, what does overflow mean */
-  background-color: #333;
-  width: 990px;/* NOTE: what if I don't know the px value, can I still write percentage here? */
+  overflow: hidden;
+  background-color: white;
+  width: 990px;
 
 }
 
@@ -38,14 +70,41 @@
   width: 33%;
   text-decoration: none;
   background-image: url("I.jpg");
-  padding: 50px 0;
-  margin:100px 0;
+  padding: 100px 0;
+  margin:0px 0;
 }
+.topnav a.I:hover {
+  background-image: url("I2.jpg");
+  color: black;}
+
+.topnav a.O{
+  float: left;
+  display: block;
+  text-align: center;
+  width: 33%;
+  text-decoration: none;
+  background-image: url("O.jpg");
+  padding: 100px 0;
+  margin:0px 0;}
+
+.topnav a.O:hover {
+    background-image: url("O2.jpg");
+    color: black;}
+
+.topnav a.W{
+    float: left;
+    display: block;
+    text-align: center;
+    width: 33%;
+    text-decoration: none;
+    background-image: url("W.jpg");
+    padding: 100px 0;
+    margin:0px 0;}
 
 /* Links - change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-}
+.topnav a.W:hover {
+  background-image: url("W2.jpg");
+  color: black;}
 
 /* Create three equal columns that floats next to each other */
 .column {
