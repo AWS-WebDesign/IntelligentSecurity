@@ -8,37 +8,16 @@
   margin: 1px;
   padding: 1px;
 }*/
-
+/* css styles*/
 .title
 {color: black;
-padding: 30px;
-text-align: center;
+padding: 10px;
+text-align: center; /* set text at the center */
 }
 
 .text
 {color: black;
 text-align: center;
-}
-
-.format1
-{
-  width: 50px;
-}
-
-.format2
-{
-  width: 70px;
-}
-
-.format3
-{
-  width: 60px;
-}
-
-table{
-  width: 200px;
-  height:150px;
-  overflow-y: scroll;
 }
 
 /* The navbar container */
@@ -69,11 +48,11 @@ table{
   text-align: center;
   width: 33%;
   text-decoration: none;
-  background-image: url("I.jpg");
+  background-image: url("I.jpg"); /* navbar image*/
   padding: 100px 0;
   margin:0px 0;
 }
-.topnav a.I:hover {
+.topnav a.I:hover /* navbar image substitution */{
   background-image: url("I2.jpg");
   color: black;}
 
@@ -101,24 +80,41 @@ table{
     padding: 100px 0;
     margin:0px 0;}
 
-/* Links - change color on hover */
 .topnav a.W:hover {
   background-image: url("W2.jpg");
   color: black;}
 
-/* Create three equal columns that floats next to each other */
+.center{
+  text-align:center;
+}
+/* Create three columns that floats next to each other */
 .column {
   float: left;
-  padding: 0px;
-}
-
-.column.side {
-  width: 0%;
+  width: 10%;
+  height: 100px;
+  padding: 5px;
+  text-align:
+  overflow:scroll;
 }
 
 .column.middle {
-  width: 0%;
+  width: 43%;
+  height: 100px;
+  padding: 10px;
+  overflow:scroll;
 }
+
+.column.side {
+  float:left;
+  width: 43%;
+  height: 100px;
+  padding: 10px;
+  overflow:scroll;
+}
+
+.Citation
+{text-align: left}
+
 
 /* Clear floats after the columns */
 .row:after {
