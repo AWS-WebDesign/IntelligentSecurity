@@ -1,0 +1,33 @@
+.head
+{text-align: center;
+color: #fec658;
+font-size: 25;}
+
+.blink_me {
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #edecf3;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #594484;
+}
